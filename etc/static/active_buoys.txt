@@ -1,0 +1,14 @@
+id,name,lat,lon,operator
+168,humboldt bay north spit, 40,89603,235.643,scripps
+94,cape mendocino,40.29487,235.26823,scripps
+29,point reyes,37.93668,236.53708,scripps
+142,san francisco bar,37.7875,237.3669,scripps
+254,point santa cruz,36.9344,237.96611,scripps
+185,monterey bay west,36.42,237.65742,scripps
+158,cabrillo point nearshore,36.6263,238.09295,scripps
+157,point sur,36.33477,237.8961,scripps
+76,diablo canyon,35.20382,239.14069,scripps
+222,santa lucia escarpment,34.7675,238.502,scripps
+71,harvest,34.45165,239.22018,scripps
+203,santa cruz basin,33.769,240.4353,scripps
+67,san nicholas island,33.21928,240.12772,scripps/navair
