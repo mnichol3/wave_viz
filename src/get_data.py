@@ -4,9 +4,6 @@
 # Retrieve wave observation and forecast files.
 #
 # ==============================================================================
-from pathlib import Path
-import os
-
 import urllib.request
 
 
