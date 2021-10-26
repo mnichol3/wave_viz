@@ -60,7 +60,6 @@ def parse_cdip_url(buoy_num, dataset, product, *kwargs):
     base_url = 'https://thredds.cdip.ucsd.edu/thredds/fileServer/cdip/'
     valid_prods_obs = ['xy', 'rt']
     valid_prods_mdl = ['hindcast', 'nowcast', 'forecast']
-    valid_mdl_dsets = ['validation', 'grids', 'alongshore']
 
     dataset_base = dataset.split('-')[0]
 
@@ -93,10 +92,19 @@ def _parse_cdip_url_mdl(base_url, buoy_num, dataset, product, *kwargs):
     product : str
         CDIP model product.
     kwargs: keyword args
-    '''
-    valid_prods_mdl = ['hindcast', 'nowcast', 'forecast']
-    valid_mdl_dsets = ['validation', 'grids', 'alongshore']
 
+    Returns
+    --------
+    str
+        CDIP model product URL.
+
+    Notes
+    ------
+    - Datasets: 'validation', 'grids', 'alongshore'
+    - Products:
+        - All datasets: 'hindcast', 'nowcast', 'forecast'
+        - Grids only: 'spectra'
+    '''
     base_url = base_url + 'model/'
 
     _, dset_type = dataset.split('-')
